@@ -62,7 +62,6 @@ $.fn.timeline = function() {
     selectors.item.each(function(i) {
       const min = $(this).offset().top - offset;
       const max = $(this).height() + $(this).offset().top - offset;
-      console.log(i, pos);
       if (i == itemCount - 2 && pos > min + $(this).height() / 2) {
         selectors.item.removeClass(selectors.activeClass);
         selectors.item.last().addClass(selectors.activeClass);

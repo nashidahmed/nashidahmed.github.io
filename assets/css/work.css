@@ -5,7 +5,8 @@
 	flex-direction: column;
   width: 100%;
   position: relative;
-  padding: 5rem 0 2rem 0;
+  margin-top: 2rem;
+  padding: 3.5rem 0 2rem 0;
   transition: 0.3s ease 0s;
 }
 

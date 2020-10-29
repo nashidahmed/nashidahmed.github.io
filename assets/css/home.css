@@ -1,0 +1,103 @@
+.content {
+  position: absolute;
+  top: 35%;
+  margin: 0 4rem;
+}
+
+.intro-wrapper {
+  width: 62%;
+}
+
+.home {
+  /* min-height: 900px; */
+  height: calc(100vh + 5rem);
+  background: url('../img/home-img.png') no-repeat;
+  background-size: contain;
+  background-position: top 0 right -10rem;
+}
+
+.intro-wrapper > .name {
+  color: rgba(0, 0, 0, 0.4);
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  padding: 0 0.25rem;
+}
+
+.intro-wrapper .designation {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+#home-buttons > a {
+  border: 2px solid rgba(0, 0, 0, 0.7);
+  box-sizing: border-box;
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0.3rem 0.6rem 0.75rem rgba(0, 0, 0, 0.4);
+  transition: box-shadow 0.25s;
+  outline: none;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+#home-buttons > a:hover {
+  box-shadow: 0.15rem 0.3rem 0.3rem rgba(0, 0, 0, 0.4);
+}
+
+#home-buttons > a:active {
+  box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.4);
+}
+
+#home-buttons > .about-button {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  margin-right: 1rem;
+}
+
+#home-buttons > .contact-button {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (max-width: 1200px) {
+  .home {
+    background-position: top 0 right -20rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    background-position: top -5rem right 0;
+  }
+
+  .content {
+    top: 65%;
+  }
+
+  .intro-wrapper { 
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .home {
+    background-position: top -2rem right 0;
+  }
+
+  .content {
+    margin: 0 1rem;
+    top: 55%;
+  }
+
+  .intro-wrapper .designation {
+    font-size: 2rem;
+  }
+
+  #home-buttons > a {
+    padding: 0.7rem 1.4rem;
+    font-size: 0.7rem;
+  }
+}

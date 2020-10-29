@@ -76,15 +76,13 @@
 }
 
 .timeline-item {
-	 padding: 2rem 0;
-	 opacity: 0.3;
-	 filter: blur(2px);
+	 padding: 1rem 0;
 	 transition: 0.5s;
 	 box-sizing: border-box;
 	 width: calc(50% - 40px);
 	 display: flex;
 	 position: relative;
-	 transform: translateY(-50px);
+   opacity: 1;
 }
 
 .timeline-item:before {
@@ -96,11 +94,11 @@
 	 font-size: 1rem;
 	 font-family: 'Pathway Gothic One', sans-serif;
 	 border-left: 2px solid rgba(0, 0, 0, .5);
-	 top: 70%;
 	 margin-top: -5px;
 	 padding-left: 15px;
-	 opacity: 0;
-	 right: calc(-100% - 56px);
+   right: calc(-100% - 56px);
+   top: 50%;
+	 transition: 0.3s all 0.2s;
 }
 
 .timeline-item:nth-child(even) {
@@ -116,27 +114,6 @@
 	 border-right: 2px solid rgba(0, 0, 0, .5);
 	 padding-right: 15px;
 }
-
-.timeline-item-active {
-	 opacity: 1;
-	 transform: translateY(0);
-	 filter: blur(0px);
-}
-
-.timeline-item-active:before {
-	 top: 50%;
-	 transition: 0.3s all 0.2s;
-	 opacity: 1;
-}
-
-.timeline-item-active .timeline-content-title {
-	 margin: -50px 0 6px 0;
-}
-
-.timeline-item-active .timeline-content-subtitle {
-  margin: 0 0 3px 0;
-}
-
 @media only screen and (max-width: 767px) {
 	.timeline-item {
 		 align-self: baseline !important;

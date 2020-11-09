@@ -1,0 +1,63 @@
+.preloader {
+  top: 0;
+  color: white;
+  position: fixed;
+  width: 100vw;
+  background: url('../img/preloader-img.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  z-index: 1000;
+  transition: transform 1s cubic-bezier(0.3, 0, 0.5, 1);
+}
+
+.preloader-content {
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(0.25rem);
+  background-color: rgba(0,0,0, 0.75);
+}
+
+.preloader-content .loader-text {
+  font-size: 3rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+}
+
+.preloader.loaded {
+  transform: translateY(-100vh);
+}
+
+.loader-text h5 {
+  margin-bottom: 1rem;
+}
+
+.loader {
+  position: absolute;
+  top: calc(50% - 2rem);
+  left: calc(50% - 2rem);
+  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+}
+
+.loader:after {
+  content: " ";
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 0.5rem solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: loader 1.2s linear infinite;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

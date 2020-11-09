@@ -31,7 +31,7 @@
 
 .timeline-content-company {
   font-weight: normal;
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin: 0.25rem 0 0 0;
   color: rgba(0, 0, 0, .85);
   transition: 0.4s;
@@ -41,9 +41,9 @@
 
 .timeline-content-client {
   font-weight: normal;
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin: 0.25rem 0 0 0;
-  color: rgba(0, 0, 0, .7);
+  color: rgba(0, 0, 0, .85);
   transition: 0.4s;
   box-sizing: border-box;
   font-family: 'Pathway Gothic One', sans-serif;
@@ -51,9 +51,9 @@
 
 .timeline-content-desc {
 	 margin: 0;
-	 font-size: 0.75rem;
+	 font-size: 0.8rem;
 	 box-sizing: border-box;
-	 color: rgba(0, 0, 0, .6);
+	 color: rgba(0, 0, 0, .75);
 	 font-weight: normal;
    line-height: 25px;
    text-align: justify;
@@ -67,12 +67,6 @@
 	 margin-left: -1px;
 	 content: "";
 	 background: rgba(0, 0, 0, .2);
-}
-
-@media only screen and (max-width: 767px) {
-	 #timeline:before {
-		 left: 40px;
-	}
 }
 
 .timeline-item {
@@ -115,6 +109,10 @@
 	 padding-right: 15px;
 }
 @media only screen and (max-width: 767px) {
+  #timeline:before {
+    left: 40px;
+  }
+
 	.timeline-item {
 		 align-self: baseline !important;
 		 width: 100%;
